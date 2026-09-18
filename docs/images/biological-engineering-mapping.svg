@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">FlyReflex biological to engineering mapping</title>
+  <desc id="desc">MaleCNS direct connectivity and paper-supported functions map through transparent engineering parameters to a fixed-point embedded runtime.</desc>
+  <defs>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#a8b7c8"/></marker>
+    <style>
+      .bg{fill:#0d1624}.panel{fill:#17263b;stroke-width:3}.connect{stroke:#48c9b0}.paper{stroke:#76d7ff}.eng{stroke:#f7bf5b}.run{stroke:#ff806c}
+      .title{fill:#fff;font:500 40px Arial,sans-serif}.head{fill:#fff;font:500 26px Arial,sans-serif;text-anchor:middle}
+      .text{fill:#d9e2ec;font:400 19px Arial,sans-serif;text-anchor:middle}.strong{fill:#fff;font:500 22px Arial,sans-serif;text-anchor:middle}
+      .arrow{stroke:#a8b7c8;stroke-width:4;fill:none;marker-end:url(#arrow2)}.foot{fill:#a8b7c8;font:400 18px Arial,sans-serif}
+    </style>
+  </defs>
+  <rect class="bg" width="1400" height="820"/><text class="title" x="70" y="70">Biological evidence → transparent engineering → embedded safety action</text>
+  <rect class="panel connect" x="50" y="140" width="300" height="500" rx="20"/><text class="head" x="200" y="190">CONNECTOME_DERIVED</text><text class="text" x="200" y="235">MaleCNS v1.0</text><text class="strong" x="200" y="295">LPLC2 → DNp01</text><text class="text" x="200" y="330">4,862 synapses</text><text class="text" x="200" y="360">185 body-pair edges</text><text class="strong" x="200" y="425">LC4 → DNp01</text><text class="text" x="200" y="460">6,362 synapses</text><text class="text" x="200" y="490">126 body-pair edges</text><text class="text" x="200" y="555">DNp01 bodyId</text><text class="text" x="200" y="585">10001 R · 10010 L</text>
+  <rect class="panel paper" x="385" y="140" width="290" height="500" rx="20"/><text class="head" x="530" y="190">PAPER_DERIVED</text><text class="strong" x="530" y="280">LPLC2</text><text class="text" x="530" y="315">looming / angular-size</text><text class="text" x="530" y="345">feature channel</text><text class="strong" x="530" y="420">LC4</text><text class="text" x="530" y="455">angular-velocity</text><text class="text" x="530" y="485">feature channel</text><text class="strong" x="530" y="555">Giant Fiber</text><text class="text" x="530" y="590">combines both inputs</text>
+  <rect class="panel eng" x="710" y="140" width="300" height="500" rx="20"/><text class="head" x="860" y="190">ENGINEERING_PARAMETER</text><text class="strong" x="860" y="270">Encoder</text><text class="text" x="860" y="305">size → LPLC2</text><text class="text" x="860" y="335">rate → LC4</text><text class="strong" x="860" y="405">Weight mapping</text><text class="text" x="860" y="440">4862:6362 → 433:567</text><text class="strong" x="860" y="510">Dynamics</text><text class="text" x="860" y="545">leak 350 · threshold 850</text><text class="text" x="860" y="575">clamp 1200</text>
+  <rect class="panel run" x="1045" y="140" width="305" height="500" rx="20"/><text class="head" x="1197" y="190">OPENVELA RUNTIME</text><text class="strong" x="1197" y="280">Fixed-point C</text><text class="text" x="1197" y="315">no NN framework</text><text class="text" x="1197" y="345">no hot-path allocation</text><text class="strong" x="1197" y="430">Safety Arbiter</text><text class="text" x="1197" y="465">AI FORWARD + DANGER</text><text class="strong" x="1197" y="510">→ ESCAPE</text><text class="text" x="1197" y="565">LVGL · NSH · monotonic time</text>
+  <path class="arrow" d="M350 390H385"/><path class="arrow" d="M675 390H710"/><path class="arrow" d="M1010 390H1045"/>
+  <text class="foot" x="70" y="715">Claim ceiling: connectome-traceable, connectome-inspired safety prototype.</text><text class="foot" x="70" y="755">Not claimed: faithful neural simulation, biological thresholds, MCU latency, or measured LLM latency.</text>
+</svg>
+

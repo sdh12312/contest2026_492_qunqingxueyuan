@@ -1,8 +1,8 @@
 build/
 cmake-build-*/
+.qa/
 *.o
 *.a
 *.exe
 *.log
 !logs/development_log.md
-

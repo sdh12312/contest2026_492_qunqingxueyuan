@@ -1,0 +1,14 @@
+FlyReflex
+Copyright 2026 FlyReflex contributors
+
+The FlyReflex source code is licensed under the Apache License 2.0.
+
+Files under data/connectome are derived from the MaleCNS v1.0 dataset provided
+by the Janelia FlyEM Project Team. They are included for reproducibility and
+retain the dataset's attribution and license requirements.
+
+Source: https://male-cns.janelia.org/download/
+Dataset identifier: male-cns:v1.0
+
+The papers cited in docs/SCIENTIFIC_BASIS.md are references only and are not
+redistributed by this repository.

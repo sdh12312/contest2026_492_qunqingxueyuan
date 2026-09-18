@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="780" viewBox="0 0 1400 780" role="img" aria-labelledby="title desc">
+  <title id="title">FlyReflex system architecture</title>
+  <desc id="desc">A slow simulated AI command path and a local looming reflex path meet at a deterministic safety arbiter. Danger overrides forward with escape.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#76d7ff"/></marker>
+    <style>
+      .bg{fill:#0d1624}.box{fill:#17263b;stroke:#41627f;stroke-width:2}.bio{fill:#132f2c;stroke:#36b7a0}.safe{fill:#382421;stroke:#ff806c}
+      .text{fill:#f4f7fb;font:500 24px Arial,sans-serif;text-anchor:middle}.sub{fill:#aebfd0;font:400 18px Arial,sans-serif;text-anchor:middle}
+      .title{fill:#fff;font:500 40px Arial,sans-serif}.tag{fill:#76d7ff;font:500 17px Arial,sans-serif}
+      .line{stroke:#76d7ff;stroke-width:4;fill:none;marker-end:url(#arrow)}.dangerline{stroke:#ff806c;stroke-width:6;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect class="bg" width="1400" height="780"/><text class="title" x="70" y="72">FlyReflex — independent local safety reflex on openvela</text>
+  <rect class="box" x="70" y="150" width="300" height="130" rx="18"/><text class="text" x="220" y="205">AI command path</text><text class="sub" x="220" y="242">FORWARD · simulated P0</text>
+  <rect class="box" x="70" y="455" width="300" height="150" rx="18"/><text class="text" x="220" y="515">Synthetic looming</text><text class="sub" x="220" y="552">size + expansion rate</text><text class="sub" x="220" y="580">deterministic scenarios</text>
+  <rect class="bio box" x="470" y="410" width="250" height="110" rx="18"/><text class="text" x="595" y="455">LPLC2</text><text class="sub" x="595" y="490">size feature</text>
+  <rect class="bio box" x="470" y="570" width="250" height="110" rx="18"/><text class="text" x="595" y="615">LC4</text><text class="sub" x="595" y="650">velocity feature</text>
+  <rect class="bio box" x="825" y="485" width="260" height="130" rx="18"/><text class="text" x="955" y="535">DNp01 / GF</text><text class="sub" x="955" y="570">fixed-point leaky node</text><text class="sub" x="955" y="596">SAFE · CAUTION · DANGER</text>
+  <rect class="safe box" x="830" y="170" width="280" height="150" rx="18"/><text class="text" x="970" y="220">Safety Arbiter</text><text class="sub" x="970" y="255">deterministic priority</text><text class="sub" x="970" y="284">DANGER overrides AI</text>
+  <rect class="safe box" x="1190" y="180" width="170" height="130" rx="18"/><text class="text" x="1275" y="230">FINAL</text><text class="sub" x="1275" y="267">ESCAPE</text><text class="sub" x="1275" y="292">or FORWARD</text>
+  <path class="line" d="M370 215H830"/><path class="line" d="M370 530H420V465H470"/><path class="line" d="M370 530H420V625H470"/>
+  <path class="line" d="M720 465H770V530H825"/><path class="line" d="M720 625H770V570H825"/><path class="dangerline" d="M955 485V320"/><path class="dangerline" d="M1110 245H1190"/>
+  <text class="tag" x="545" y="190">slow / nondeterministic timing</text><text class="tag" x="745" y="720">local integer hot path · CLOCK_MONOTONIC · LVGL / NSH</text><text class="tag" x="1120" y="465">REFLEX: ESCAPE</text>
+</svg>
+
