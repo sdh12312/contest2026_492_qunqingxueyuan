@@ -143,11 +143,10 @@ static void ui_timer_callback(lv_timer_t *timer)
 static lv_obj_t *make_label(lv_obj_t *parent, const char *text, int32_t size)
 {
   lv_obj_t *label = lv_label_create(parent);
+  (void)size;
   lv_label_set_text(label, text);
   lv_obj_set_width(label, LV_PCT(100));
-  lv_obj_set_style_text_font(label,
-                             size >= 24 ? &lv_font_montserrat_24 :
-                             &lv_font_montserrat_16, 0);
+  lv_obj_set_style_text_font(label, LV_FONT_DEFAULT, 0);
   return label;
 }
 
@@ -220,4 +219,3 @@ int flyreflex_ui_run(void)
 
   return 0;
 }
-
