@@ -119,13 +119,15 @@ openvela 不是标签：FlyReflex 作为 NSH 内建应用被交叉编译进现�
 
 ## Integrate into an openvela contest workspace
 
-比赛专属仓应通过 manifest linkfile 将 app/flyreflex 映射到：
+官方比赛仓通过 `contest2026_492_qunqingxueyuan.xml` 中的 manifest linkfile 将 `app/flyreflex` 映射到：
 
-    packages/demos/flyreflex
+    packages/demos/contest2026_492_flyreflex
 
-当前验证工作区使用等价的本地软链接：
+使用组委会提供的标准方式获取完整工作区：
 
-    ln -s /path/to/FlyReflex/app/flyreflex packages/demos/flyreflex
+    repo init -u https://github.com/open-vela/contest2026_492_qunqingxueyuan \
+      -b dev-ai-contest-2026 -m contest2026_492_qunqingxueyuan.xml
+    repo sync -c -j8
 
 启用 Application Configuration → Packages → Demos → FlyReflex，然后构建：
 
