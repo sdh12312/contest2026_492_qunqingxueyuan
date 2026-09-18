@@ -1,0 +1,25 @@
+config FLYREFLEX
+  bool "FlyReflex connectome-traceable safety reflex"
+  default n
+  depends on GRAPHICS_LVGL
+  help
+    Enable the FlyReflex NSH application and LVGL dashboard.  FlyReflex runs
+    deterministic synthetic looming scenarios through a tiny fixed-point
+    reflex engine and safety arbiter.
+
+if FLYREFLEX
+
+config FLYREFLEX_PROGNAME
+  string "FlyReflex command name"
+  default "flyreflex"
+
+config FLYREFLEX_PRIORITY
+  int "FlyReflex task priority"
+  default 100
+
+config FLYREFLEX_STACKSIZE
+  int "FlyReflex stack size"
+  default 32768
+
+endif
+
