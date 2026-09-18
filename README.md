@@ -148,7 +148,9 @@ openvela 不是标签：FlyReflex 作为 NSH 内建应用被交叉编译进现�
     flyreflex bench 1000
     flyreflex ui
 
-UI 自动循环 SAFE → SLOW → DANGER → RECOVERY，显示 looming risk、LPLC2、LC4、DNp01/GF、AI command、reflex command、final command、decision 和本地端到端延迟。关闭 GUI 或退出模拟器后可回到 console 流程。
+UI 自动循环 SAFE → SLOW → DANGER → RECOVERY，也可以直接点击顶部四个场景按钮。仪表盘显示 collision risk、LPLC2、LC4、DNp01/GF、AI command、local reflex、robot executes、最终决策和本地端到端延迟。绿色表示 AI 正常控制，黄色表示持续监视，红色表示本地反射已覆盖 AI；终端仅在场景、状态或决策改变时输出一行摘要，不再逐帧刷屏。
+
+最快验收方式：启动 `flyreflex ui` 后点击 `DANGER`，应看到状态区变红、`LOCAL REFLEX = ESCAPE`、`ROBOT EXECUTES = ESCAPE` 和 `REFLEX_OVERRIDE`；再点击 `SAFE`，界面应恢复绿色且最终指令回到 `FORWARD`。
 
 ## Reproduce the connectome extraction
 
