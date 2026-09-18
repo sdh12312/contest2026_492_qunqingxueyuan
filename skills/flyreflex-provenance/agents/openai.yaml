@@ -1,0 +1,3 @@
+interface:
+  display_name: "FlyReflex Provenance"
+  short_description: "Audit MaleCNS evidence and model mapping"

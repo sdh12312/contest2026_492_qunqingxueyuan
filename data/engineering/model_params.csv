@@ -1,0 +1,15 @@
+parameter,value,unit,source_type,description
+numeric_scale,1000,milli-units,ENGINEERING_PARAMETER,Integer normalization scale used to avoid floating point in the hot path
+lplc2_to_dnp01_synapses,4862,synapses,CONNECTOME_DERIVED,Aggregate direct MaleCNS v1.0 LPLC2 to DNp01 edge count queried 2026-09-18
+lc4_to_dnp01_synapses,6362,synapses,CONNECTOME_DERIVED,Aggregate direct MaleCNS v1.0 LC4 to DNp01 edge count queried 2026-09-18
+lplc2_weight,433,milli-weight,CONNECTOME_DERIVED,4862 divided by 11224 and rounded to the integer scale
+lc4_weight,567,milli-weight,CONNECTOME_DERIVED,6362 divided by 11224 and rounded to the integer scale
+leak,350,milli-ratio,ENGINEERING_PARAMETER,Discrete leaky integrator retention per step
+caution_threshold,300,milli-activity,ENGINEERING_PARAMETER,Prototype state threshold selected for deterministic scenario separation
+danger_threshold,850,milli-activity,ENGINEERING_PARAMETER,Prototype override threshold selected for deterministic scenario separation
+membrane_clamp,1200,milli-activity,ENGINEERING_PARAMETER,Bounds internal state and prevents numeric growth
+lplc2_encoder,size_proxy,mapping,ENGINEERING_PARAMETER,Normalized angular-size proxy mapped to LPLC2 activity based on paper-supported feature role
+lc4_encoder,expansion_rate_proxy,mapping,ENGINEERING_PARAMETER,Normalized positive expansion-rate proxy mapped to LC4 activity based on paper-supported feature role
+danger_action,ESCAPE,command,ENGINEERING_PARAMETER,Product-level safe-action mapping rather than a biological motor simulation
+invalid_input_action,STOP,command,ENGINEERING_PARAMETER,Fail-safe action for out-of-range sensor input
+

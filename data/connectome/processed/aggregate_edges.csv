@@ -1,0 +1,3 @@
+source_dataset,dataset_version,pre_cell_type,post_cell_type,synapse_count,body_pair_edges,verification_status
+MaleCNS,male-cns:v1.0,LC4,DNp01,6362,126,DIRECT_CONNECTOME
+MaleCNS,male-cns:v1.0,LPLC2,DNp01,4862,185,DIRECT_CONNECTOME
